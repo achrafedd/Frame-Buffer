@@ -12,6 +12,7 @@
 # include <string.h>
 # include <unistd.h>
 # include <fcntl.h>
+# include <math.h>
 
 typedef struct s_fb {
     int                        fd;
@@ -25,5 +26,6 @@ typedef struct s_fb {
 int ft_fb_init(t_fb *fb);
 void ft_fb_destroy(t_fb *fb);
 void ft_put_pixel(t_fb *fb, int x, int y, uint32_t color);
+void ft_fill_rect(t_fb *fb, int x, int y, int w, int h, uint32_t color);
 
 #endif // !FRAMEBUFFER_H

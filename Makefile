@@ -1,7 +1,7 @@
 CC = cc
-CFLAGS += -Wall -Wextra -Werror -Iincludes
+CFLAGS +=  -Iincludes -lm #-Wall -Wextra -Werror
 NAME = framebuffer
-SRCS = src/main.c src/fb_init.c src/fb_destroy.c
+SRCS = src/main.c src/fb_init.c src/fb_destroy.c src/put_pixel.c src/fb_fill_rect.c
 OBJS = $(SRCS:src/%.c=obj/%.o)
 
 obj/%.o: src/%.c
