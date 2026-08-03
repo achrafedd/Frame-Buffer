@@ -22,5 +22,8 @@ typedef struct s_fb {
     long                       screensize;
 } t_fb;
 
+int ft_fb_init(t_fb *fb);
+void ft_fb_destroy(t_fb *fb);
+void ft_put_pixel(t_fb *fb, int x, int y, uint32_t color);
 
 #endif // !FRAMEBUFFER_H
